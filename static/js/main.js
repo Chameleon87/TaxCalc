@@ -40,9 +40,10 @@ $("#salary").keyup(function() {
     tax_takehome_func(value);
     take_home = 
     $('#Wages').text("Wages: $" + value);
-    $('#tax').text("Tax: $" + tax);
-    $('#take-home').text("Take Home: $" + (value - tax))
-    $('#monthly-take-home').text("Monthly Take Home: $" + (value - tax)/12)
-    $('#hourly').text("You make: $" + (((value - tax)/12)/40) + " an hour, in a 40 hour work week.")
+    $('#tax').text("Tax: $" + (tax).toFixed(2));
+    $('#take-home').text("Take Home: $" + ((value - tax).toFixed(2)));
+    $('#monthly-take-home').text("Monthly Take Home: $" + (((value - tax)/12).toFixed(2)));
+    $('#weekly').text("Weekly: $" + (((value - tax)/12)/4).toFixed(2));
+    $('#hourly').text("Hourly: $" + ((((value - tax)/12)/4)/40).toFixed(2) + " in a 40 hour work week.");
 });
 });
