@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
+
+body{
+  font-family: 'Raleway', sans-serif;
+  background: url(http://subtlepatterns.com/patterns/footer_lodyas.png);
+  
+}
+
+h1{
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #ffc;
+}
+
+#input_area{
+  text-align: center;
+  font-size: 2em;
+  color: #ff9;
+  margin-top: 30px;
+}
+
+.ct-chart{
+  font-size: 1.2em;
+}

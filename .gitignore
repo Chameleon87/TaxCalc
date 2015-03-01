@@ -1,0 +1,5 @@
+*.sqlite3
+*.pyc
+local_settings.py
+benv
+pip-selfcheck.json
