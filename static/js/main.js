@@ -65,14 +65,18 @@ $(document).ready(function () {
         }
     };
     
+    var salary = $('.salary-chart');
+    var hourly = $('.hourly-chart');
     // Toggle() Charts
-    $('.salary-chart').hide();
+    salary.hide();
         $('.salary').on('click', function() {
-            $('.salary-chart').toggle();
+            hourly.hide();
+            salary.toggle();
     }),
-    $('.hourly-chart').hide();
+    hourly.hide();
         $('.hourly').on('click', function() {
-            $('.hourly-chart').toggle();
+            salary.hide();
+            hourly.toggle();
     }),
     // JavaScript Rendering #salary
     $("#salary").keyup(function() {
