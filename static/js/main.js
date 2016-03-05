@@ -35,34 +35,7 @@ $(document).ready(function () {
     };
     //Take home Hourly calc
     var tax_takehome_hour = function (value) {
-        if (value <= 4.25) {
-            tax = (((value) * 10) / 100);
-            take_home = (value - tax);
-        }
-        else if (value >= 4.26 && value <= 16.34) {
-            tax = (((value) * 15) / 100);
-            take_home = (value - tax);
-        }
-        else if (value >= 16.35 && value <= 34.90) {
-            tax = (((value)* 25) / 100);
-            take_home = (value - tax);
-        }
-        else if (value >= 34.91 && value <= 69.88) {
-            tax = (((value)* 28) / 100);
-            take_home = (value - tax);
-        }
-        else if (value >= 69.89 && value <= 137.70) {
-            tax = (((value) * 33) / 100);
-            take_home = (value - tax);
-        }
-        else if (value >= 137.70 && value <= 141.37) {
-            tax = (((value) * 35) / 100);
-            take_home = (value - tax);
-        }
-        else {
-            tax = (((value) * 39) / 100);
-            take_home = (value - tax);
-        }
+            
     };
     
     var salary = $('.salary-chart');

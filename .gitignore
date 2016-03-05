@@ -1,5 +1,5 @@
 *.sqlite3
 *.pyc
 local_settings.py
-benv
+bud
 pip-selfcheck.json
